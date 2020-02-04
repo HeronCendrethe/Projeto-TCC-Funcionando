@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{66E5CD16-CF0B-4DEF-985A-B2FF5827F936}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Vismo</RootNamespace>
+    <AssemblyName>Vismo</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="formAus2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formAus2.Designer.cs">
+      <DependentUpon>formAus2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrincipal.Designer.cs">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUsuario.Designer.cs">
+      <DependentUpon>FrmUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="TelaAusente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaAusente.Designer.cs">
+      <DependentUpon>TelaAusente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCPerfil.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCPerfil.Designer.cs">
+      <DependentUpon>UCPerfil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_alteracoes\UCAttFornecedor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="_alteracoes\UCAttFornecedor.Designer.cs">
+      <DependentUpon>UCAttFornecedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_alteracoes\UCAttProdutoE.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="_alteracoes\UCAttProdutoE.Designer.cs">
+      <DependentUpon>UCAttProdutoE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_alteracoes\UCAttProdutoF.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="_alteracoes\UCAttProdutoF.Designer.cs">
+      <DependentUpon>UCAttProdutoF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_alteracoes\UCAttProdutoL.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="_alteracoes\UCAttProdutoL.Designer.cs">
+      <DependentUpon>UCAttProdutoL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_cadastros\UCCadastro.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="_cadastros\UCCadastro.Designer.cs">
+      <DependentUpon>UCCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_cadastros\UCCadFornecedor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="_cadastros\UCCadFornecedor.Designer.cs">
+      <DependentUpon>UCCadFornecedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCPrincipal.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCPrincipal.Designer.cs">
+      <DependentUpon>UCPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_cadastros\UCCadPagamento.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="_cadastros\UCCadPagamento.Designer.cs">
+      <DependentUpon>UCCadPagamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_cadastros\UCCadProdutoE.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="_cadastros\UCCadProdutoE.Designer.cs">
+      <DependentUpon>UCCadProdutoE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_cadastros\UCCadProdutoF.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="_cadastros\UCCadProdutoF.Designer.cs">
+      <DependentUpon>UCCadProdutoF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_cadastros\UCCadProdutoL.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="_cadastros\UCCadProdutoL.Designer.cs">
+      <DependentUpon>UCCadProdutoL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_registros\UCRegFornecedor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="_registros\UCRegFornecedor.Designer.cs">
+      <DependentUpon>UCRegFornecedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_registros\UCRegistro.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="_registros\UCRegistro.Designer.cs">
+      <DependentUpon>UCRegistro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_registros\UCRegPagamento.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="_registros\UCRegPagamento.Designer.cs">
+      <DependentUpon>UCRegPagamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_registros\UCRegProduto.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="_registros\UCRegProduto.Designer.cs">
+      <DependentUpon>UCRegProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_registros\UCRegVenda.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="_registros\UCRegVenda.Designer.cs">
+      <DependentUpon>UCRegVenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_venda\UCNovaVenda.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="_venda\UCNovaVenda.Designer.cs">
+      <DependentUpon>UCNovaVenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_venda\UCVenda.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="_venda\UCVenda.Designer.cs">
+      <DependentUpon>UCVenda.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="formAus2.resx">
+      <DependentUpon>formAus2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrincipal.resx">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUsuario.resx">
+      <DependentUpon>FrmUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaAusente.resx">
+      <DependentUpon>TelaAusente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCPerfil.resx">
+      <DependentUpon>UCPerfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_alteracoes\UCAttFornecedor.resx">
+      <DependentUpon>UCAttFornecedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_alteracoes\UCAttProdutoE.resx">
+      <DependentUpon>UCAttProdutoE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_alteracoes\UCAttProdutoF.resx">
+      <DependentUpon>UCAttProdutoF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_alteracoes\UCAttProdutoL.resx">
+      <DependentUpon>UCAttProdutoL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_cadastros\UCCadastro.resx">
+      <DependentUpon>UCCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_cadastros\UCCadFornecedor.resx">
+      <DependentUpon>UCCadFornecedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCPrincipal.resx">
+      <DependentUpon>UCPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_cadastros\UCCadPagamento.resx">
+      <DependentUpon>UCCadPagamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_cadastros\UCCadProdutoE.resx">
+      <DependentUpon>UCCadProdutoE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_cadastros\UCCadProdutoF.resx">
+      <DependentUpon>UCCadProdutoF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_cadastros\UCCadProdutoL.resx">
+      <DependentUpon>UCCadProdutoL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_registros\UCRegFornecedor.resx">
+      <DependentUpon>UCRegFornecedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_registros\UCRegistro.resx">
+      <DependentUpon>UCRegistro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_registros\UCRegPagamento.resx">
+      <DependentUpon>UCRegPagamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_registros\UCRegProduto.resx">
+      <DependentUpon>UCRegProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_registros\UCRegVenda.resx">
+      <DependentUpon>UCRegVenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_venda\UCNovaVenda.resx">
+      <DependentUpon>UCNovaVenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_venda\UCVenda.resx">
+      <DependentUpon>UCVenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="imagens\" />
+    <Folder Include="Resources\" />
+    <Folder Include="_estoque\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Documents\WindowsFormsApplication2\WindowsFormsApplication2\TelaAutonomo.csproj">
+      <Project>{4f50131f-c677-4e0b-911f-8f5c2e92fceb}</Project>
+      <Name>TelaAutonomo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Controle\Controle.csproj">
+      <Project>{dd6bea33-94de-44c2-8f90-1babf01d4dd7}</Project>
+      <Name>Controle</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
